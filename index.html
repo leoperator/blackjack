@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div>Blackjack</div>
+        <div class="rules">Rules
+            <div class="rules-content">
+                <p>- Try to get as close to 21 as possible.</p>
+                <p>- Face cards are worth 10, Aces are 1 or 11.</p>
+                <p>- Beat the dealer without busting!</p>
+            </div>
+        </div>
+    </div>
+    <h2>Dealer: <span id="dealer-sum"></span></h2>
+    <div id="dealer-cards">
+        <img id="hidden" src="./cards/BACK.png">
+    </div>
+
+    <h2>Player: <span id="player-sum"></span></h2>
+    <div id="player-cards"></div>
+
+    <br>
+    <button id="hit">Hit</button>
+    <button id="stand" onlick = "endGame()">Stand</button>
+    <button id="play-again" onclick = "location.reload();">Play Again</button>
+    <p id="result"></p>
+    
+</body>
+</html>
